@@ -1,104 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Personal portfolio of a BSIT student, developer, PC enthusiast, and creative producer." />
-  <meta name="theme-color" content="#090b10" />
-  <title>Patrick David — Developer & Creative Technologist</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0b0c">
+  <meta name="description" content="Patrick David — IT student, developer, and creative from Pampanga, Philippines.">
+  <title>Patrick David — Developer & Creative</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css" />
-  <script defer src="js/main.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
   <header class="site-header">
-    <a class="brand" href="#home" aria-label="Go to homepage"><span class="brand-mark">P<span>.</span></span><span class="brand-name">PATRICK DAVID</span></a>
+    <a class="brand" href="#top" aria-label="Patrick David home"><span class="brand-mark">P<span>.</span></span><span class="brand-name">PATRICK DAVID</span></a>
     <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button>
-    <nav class="nav" aria-label="Main navigation">
-      <a href="#about">About</a><a href="#skills">Expertise</a><a href="#projects">Projects</a><a href="#setup">Setup</a><a href="#creative">Creative</a>
-      <a class="nav-contact" href="#contact">Let's connect <span>↗</span></a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#work">Selected work</a>
+      <a href="#toolkit">Toolkit</a>
+      <a href="#setup">Setup</a>
+      <a class="nav-contact" href="#contact">Let's talk <span>↗</span></a>
     </nav>
   </header>
 
-  <main>
-    <section class="hero section-wrap" id="home">
-      <div class="hero-copy reveal">
-        <div class="eyebrow"><span class="status-dot"></span> AVAILABLE FOR COLLABORATION <span class="eyebrow-line"></span> PHILIPPINES</div>
-        <p class="hero-kicker">DEVELOPER · BUILDER · CREATIVE</p>
-        <h1>Turning curiosity<br>into <span class="gradient-text">something real.</span></h1>
-        <p class="hero-description">I'm Patrick — an Information Technology student, hands-on PC enthusiast, and creative who enjoys building useful digital experiences and figuring out how things work.</p>
-        <div class="hero-actions"><a class="button button-primary" href="#projects">Explore my work <span>↗</span></a><a class="button button-quiet" href="#about">A little about me <span>↓</span></a></div>
-        <div class="hero-meta"><div><strong>BSIT</strong><span>National University Clark</span></div><div><strong>3.65</strong><span>Term GWA</span></div><div><strong>01</strong><span>Year · Dean's List</span></div></div>
-      </div>
-      <div class="hero-visual reveal">
-        <div class="visual-top"><span>PROFILE / 001</span><span class="mono">2026 — PRESENT</span></div>
-        <div class="orbital">
-          <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="orbit orbit-c"></div>
-          <div class="core"><span>PD</span><small>BUILD / CREATE</small></div>
-          <span class="orbit-label label-one">CODE</span><span class="orbit-label label-two">DESIGN</span><span class="orbit-label label-three">HARDWARE</span>
-          <span class="orbit-node node-one"></span><span class="orbit-node node-two"></span><span class="orbit-node node-three"></span>
+  <main id="top">
+    <section class="hero section-wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> AVAILABLE FOR COLLABORATION <span class="eyebrow-line"></span> PH / 2026</div>
+        <p class="hero-kicker">HELLO, WORLD. I'M</p>
+        <h1>Patrick<br><span class="outline-text">David<span class="period">.</span></span></h1>
+        <div class="hero-bottom">
+          <p class="hero-description">An IT student with a developer's curiosity and a creative's eye. I like making useful things, figuring out how they work, and giving ideas a life of their own.</p>
+          <div class="hero-actions">
+            <a class="button button-light" href="#work">Explore my work <span>↓</span></a>
+            <a class="text-link" href="https://github.com/Patrick-David1" target="_blank" rel="noreferrer">GitHub profile ↗</a>
+          </div>
         </div>
-        <div class="visual-bottom"><span>ALWAYS LEARNING. ALWAYS BUILDING.</span><span class="mono">01 / 05</span></div>
       </div>
-      <a class="scroll-cue" href="#about"><span class="scroll-line"></span> SCROLL TO EXPLORE</a>
+      <div class="hero-art" aria-label="Decorative interactive graphic">
+        <div class="art-topline"><span>FIG. 001 — PERSONAL SYSTEM</span><span>EST. 2005 / ?</span></div>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="orbit-core"><span class="core-cross">✳</span><span class="core-label">PD<br>STUDIO</span></div>
+        <span class="orbit-tag tag-a">CREATIVE<br>THINKING</span>
+        <span class="orbit-tag tag-b">LOGIC<br>DRIVEN</span>
+        <span class="orbit-tag tag-c">ALWAYS<br>LEARNING</span>
+        <div class="art-bottomline"><span>14°58' N / 120°37' E</span><span class="mono">PAMPANGA, PH</span></div>
+      </div>
+      <div class="hero-index"><span>SCROLL TO EXPLORE</span><span class="scroll-line"></span><span>01 — 06</span></div>
     </section>
 
-    <section class="section section-wrap" id="about">
-      <div class="section-heading reveal"><p class="eyebrow">01 / THE PERSON BEHIND THE SCREEN</p><h2>More than just<br><span class="muted">the technology.</span></h2></div>
+    <section class="ticker" aria-label="Areas of interest">
+      <div class="ticker-track">
+        <span>DEVELOPMENT</span><i>✳</i><span>DESIGN</span><i>✳</i><span>VIDEO PRODUCTION</span><i>✳</i><span>TECHNOLOGY</span><i>✳</i><span>DEVELOPMENT</span><i>✳</i><span>DESIGN</span><i>✳</i><span>VIDEO PRODUCTION</span><i>✳</i><span>TECHNOLOGY</span><i>✳</i>
+      </div>
+    </section>
+
+    <section class="section-wrap about-section" id="about">
+      <div class="section-heading reveal"><span class="section-number">01 / ABOUT</span><span class="section-rule"></span><span class="section-note">A LITTLE CONTEXT</span></div>
       <div class="about-grid">
-        <div class="about-lead reveal"><p class="large-copy">I like understanding how things work — then finding ways to make them work <em>better.</em></p><p>My interests sit at the intersection of software, hardware, and visual communication. I enjoy moving between writing code, troubleshooting a PC, shaping an interface, and producing media.</p></div>
-        <div class="about-details reveal">
-          <div class="detail-row"><span class="detail-index">A / 01</span><div><h3>Curiosity first</h3><p>I learn by experimenting, taking things apart, and building projects that solve practical problems.</p></div></div>
-          <div class="detail-row"><span class="detail-index">A / 02</span><div><h3>Function meets form</h3><p>Good technology should work well and feel intuitive. That is why I care about both implementation and interface design.</p></div></div>
-          <div class="detail-row"><span class="detail-index">A / 03</span><div><h3>Always in progress</h3><p>I'm continuing to develop my skills through coursework, personal projects, and hands-on technical work.</p></div></div>
+        <div class="about-title reveal"><h2>Curious by<br>nature. <span>Creative</span><br>by practice.</h2></div>
+        <div class="about-content reveal">
+          <p class="lead">I'm currently pursuing a <strong>BS in Information Technology</strong> at National University — Clark, based in Pampanga, Philippines.</p>
+          <p>I enjoy moving between technical and creative work: writing programs, designing interfaces, editing videos, experimenting with motion, and tinkering with the hardware and software I use every day.</p>
+          <p>I'm still learning, building, and finding my direction. This space is a record of that process — projects, experiments, and everything in between.</p>
+          <div class="quick-facts">
+            <div><span class="fact-label">CURRENTLY</span><strong>BS Information Technology</strong></div>
+            <div><span class="fact-label">SCHOOL</span><strong>National University — Clark</strong></div>
+            <div><span class="fact-label">LOCATION</span><strong>Pampanga, Philippines</strong></div>
+            <div><span class="fact-label">CREATIVE STUDIO</span><strong>Take Two Productions</strong></div>
+          </div>
         </div>
       </div>
-      <div class="education-strip reveal"><div><span class="eyebrow">CURRENTLY STUDYING</span><h3>Bachelor of Science in Information Technology</h3><p>National University Clark · First year</p></div><div class="academic-score"><strong>3.65</strong><span>TERM GWA</span></div><div class="academic-note"><span class="mini-star">✳</span><span>Dean's List<br><small>First-year academic recognition</small></span></div></div>
     </section>
 
-    <section class="section section-wrap" id="skills">
-      <div class="section-heading reveal"><p class="eyebrow">02 / WHAT I WORK WITH</p><h2>Technical <span class="muted">toolkit.</span></h2><p class="section-intro">A growing collection of tools and skills I've used in coursework, personal builds, and creative work.</p></div>
-      <div class="skill-grid">
-        <article class="skill-card reveal"><div class="card-top"><span class="card-number">01</span><span class="card-symbol">⌘</span></div><h3>Software development</h3><p>Building functional applications and exploring modern web interfaces.</p><div class="tag-list"><span>Java</span><span>C++</span><span>HTML</span><span>Windows Batch</span><span>Java Swing</span></div></article>
-        <article class="skill-card reveal"><div class="card-top"><span class="card-number">02</span><span class="card-symbol">▤</span></div><h3>Databases & backend</h3><p>Connecting applications to structured data and local development environments.</p><div class="tag-list"><span>MySQL</span><span>XAMPP</span><span>JDBC</span></div></article>
-        <article class="skill-card reveal"><div class="card-top"><span class="card-number">03</span><span class="card-symbol">◈</span></div><h3>PC hardware & modding</h3><p>Building, maintaining, tuning, and customizing desktop and laptop systems.</p><div class="tag-list"><span>PC building</span><span>Undervolting</span><span>Thermals</span><span>ARGB</span><span>Open-air builds</span></div></article>
-        <article class="skill-card reveal"><div class="card-top"><span class="card-number">04</span><span class="card-symbol">⌁</span></div><h3>Windows & system tools</h3><p>Configuring Windows, recovery media, drivers, desktop customization, and security utilities.</p><div class="tag-list"><span>Windows 11</span><span>Rainmeter</span><span>Windhawk</span><span>Hashcat</span></div></article>
-        <article class="skill-card reveal"><div class="card-top"><span class="card-number">05</span><span class="card-symbol">✳</span></div><h3>Creative production</h3><p>Visual storytelling through editing, motion graphics, and graphic design.</p><div class="tag-list"><span>CapCut Pro</span><span>Canva</span><span>Snapseed</span><span>Microsoft 365</span></div></article>
-        <article class="skill-card reveal"><div class="card-top"><span class="card-number">06</span><span class="card-symbol">⌗</span></div><h3>Productivity & planning</h3><p>Organizing information, collaborating, and documenting project workflows.</p><div class="tag-list"><span>Teams</span><span>Planner</span><span>Excel</span><span>Word</span><span>Visio</span></div></article>
+    <section class="work-section" id="work">
+      <div class="section-wrap">
+        <div class="section-heading reveal"><span class="section-number">02 / SELECTED WORK</span><span class="section-rule"></span><span class="section-note">BUILT, LEARNED, REPEATED</span></div>
+        <div class="work-intro reveal">
+          <h2>A few things<br><span>I've put together.</span></h2>
+          <p>Small programs, academic exercises, and experiments. These are stepping stones — not the finish line.</p>
+        </div>
+        <div class="project-toolbar reveal">
+          <div class="filter-group" role="group" aria-label="Filter projects">
+            <button class="filter-button active" data-filter="all">All <span>↗</span></button>
+            <button class="filter-button" data-filter="java">Java</button>
+            <button class="filter-button" data-filter="cpp">C++</button>
+            <button class="filter-button" data-filter="coursework">Coursework</button>
+          </div>
+          <span class="repo-status"><span class="status-dot"></span><span id="repo-status-text">GITHUB REPOSITORIES</span></span>
+        </div>
+        <div class="project-grid" id="project-grid">
+          <a class="project-card" href="https://github.com/Patrick-David1/Simple-Java-ATM-System" target="_blank" rel="noreferrer" data-category="java">
+            <div class="project-card-top"><span>01 / JAVA</span><span>↗</span></div><div class="project-icon">₱</div>
+            <h3>Simple Java<br>ATM System</h3><p>A console-based ATM simulation with PIN validation, balance checks, deposits, and withdrawals.</p>
+            <div class="project-tags"><span>JAVA</span><span>LOOPS</span><span>INPUT VALIDATION</span></div>
+            <div class="project-card-bottom"><span>VIEW REPOSITORY</span><span>↗</span></div>
+          </a>
+          <a class="project-card" href="https://github.com/Patrick-David1/Pizza-Ordering-Kiosk-Java-" target="_blank" rel="noreferrer" data-category="java">
+            <div class="project-card-top"><span>02 / JAVA</span><span>↗</span></div><div class="project-icon">◎</div>
+            <h3>Pizza Ordering<br>Kiosk</h3><p>A command-line ordering flow with menu selection, input checks, itemized receipts, and order totals.</p>
+            <div class="project-tags"><span>JAVA</span><span>CONSOLE APP</span><span>VALIDATION</span></div>
+            <div class="project-card-bottom"><span>VIEW REPOSITORY</span><span>↗</span></div>
+          </a>
+          <a class="project-card" href="https://github.com/Patrick-David1/Pythagorean-Theorem-Auto-Solver" target="_blank" rel="noreferrer" data-category="cpp">
+            <div class="project-card-top"><span>03 / C++</span><span>↗</span></div><div class="project-icon">√</div>
+            <h3>Pythagorean<br>Auto Solver</h3><p>A pair of C++ programs for solving right-triangle problems, including non-perfect square results.</p>
+            <div class="project-tags"><span>C++</span><span>MATHEMATICS</span><span>LOGIC</span></div>
+            <div class="project-card-bottom"><span>VIEW REPOSITORY</span><span>↗</span></div>
+          </a>
+          <a class="project-card" href="https://github.com/Patrick-David1/Quadratic-Equation-Nature-of-Roots" target="_blank" rel="noreferrer" data-category="cpp">
+            <div class="project-card-top"><span>04 / C++</span><span>↗</span></div><div class="project-icon">Δ</div>
+            <h3>Quadratic Equation<br>Nature of Roots</h3><p>Calculates the discriminant and identifies whether an equation has real, equal, or imaginary roots.</p>
+            <div class="project-tags"><span>C++</span><span>DISCRIMINANT</span><span>CONDITIONALS</span></div>
+            <div class="project-card-bottom"><span>VIEW REPOSITORY</span><span>↗</span></div>
+          </a>
+          <a class="project-card" href="https://github.com/Patrick-David1/Odd-Even-Number-Detection" target="_blank" rel="noreferrer" data-category="cpp">
+            <div class="project-card-top"><span>05 / C++</span><span>↗</span></div><div class="project-icon">%</div>
+            <h3>Odd-Even Number<br>Detection</h3><p>A simple number checker using the modulo operator and conditional statements.</p>
+            <div class="project-tags"><span>C++</span><span>MODULO</span><span>BEGINNER</span></div>
+            <div class="project-card-bottom"><span>VIEW REPOSITORY</span><span>↗</span></div>
+          </a>
+          <a class="project-card project-card-muted" href="https://github.com/Patrick-David1/ITE-102" target="_blank" rel="noreferrer" data-category="coursework">
+            <div class="project-card-top"><span>06 / COURSEWORK</span><span>↗</span></div><div class="project-icon">⌘</div>
+            <h3>ITE-102<br>Coursework</h3><p>A collection of coursework and programming activities from my IT studies.</p>
+            <div class="project-tags"><span>ACADEMICS</span><span>EXERCISES</span></div>
+            <div class="project-card-bottom"><span>VIEW REPOSITORY</span><span>↗</span></div>
+          </a>
+        </div>
+        <div class="repo-footer reveal"><p id="repo-count">A snapshot of my current public work.</p><a class="button button-outline" href="https://github.com/Patrick-David1?tab=repositories" target="_blank" rel="noreferrer">Browse all repositories <span>↗</span></a></div>
       </div>
     </section>
 
-    <section class="section section-wrap" id="projects">
-      <div class="section-heading reveal"><p class="eyebrow">03 / SELECTED BUILDS</p><h2>Ideas made <span class="muted">useful.</span></h2><p class="section-intro">A selection of academic and practical systems I've worked on. Project descriptions are summaries; add screenshots and repositories as they become available.</p></div>
-      <div class="project-list">
-        <article class="project-item reveal"><div class="project-index">01</div><div class="project-main"><div class="project-type">WEB / ADMINISTRATION</div><h3>School administration dashboard</h3><p>A centralized interface concept for presenting and managing school-related information and administrative workflows.</p><div class="tag-list"><span>UI</span><span>Dashboard</span><span>Data organization</span></div></div><div class="project-arrow">↗</div></article>
-        <article class="project-item reveal"><div class="project-index">02</div><div class="project-main"><div class="project-type">APPLICATION / RETAIL</div><h3>Interactive ordering kiosk</h3><p>An ordering interface designed around clear product selection and a straightforward customer flow.</p><div class="tag-list"><span>Java</span><span>GUI</span><span>UX</span></div></div><div class="project-arrow">↗</div></article>
-        <article class="project-item reveal"><div class="project-index">03</div><div class="project-main"><div class="project-type">DATABASE / MANAGEMENT</div><h3>Inventory management system</h3><p>A system concept for tracking items, organizing records, and supporting day-to-day inventory tasks.</p><div class="tag-list"><span>MySQL</span><span>JDBC</span><span>CRUD</span></div></div><div class="project-arrow">↗</div></article>
-        <article class="project-item reveal"><div class="project-index">04</div><div class="project-main"><div class="project-type">MICROSOFT 365 / CAMPUS</div><h3>Campus Lost & Found System</h3><p>A collaborative campus workflow built around Microsoft 365 tools for coordinating reports, tasks, and documentation.</p><div class="tag-list"><span>Teams</span><span>Planner</span><span>Excel</span><span>Visio</span></div></div><div class="project-arrow">↗</div></article>
+    <section class="section-wrap toolkit-section" id="toolkit">
+      <div class="section-heading reveal"><span class="section-number">03 / TOOLKIT</span><span class="section-rule"></span><span class="section-note">MY DIGITAL WORKBENCH</span></div>
+      <div class="toolkit-grid">
+        <div class="toolkit-intro reveal"><h2>Different tools.<br><span>Different ways</span><br>to create.</h2><p>A growing toolkit for building, designing, and making things happen.</p></div>
+        <div class="toolkit-list reveal">
+          <div class="toolkit-row"><span class="toolkit-index">01</span><div><h3>Development</h3><p>Java · C++ · HTML5 · Windows Batch</p></div><span class="toolkit-symbol">⌘</span></div>
+          <div class="toolkit-row"><span class="toolkit-index">02</span><div><h3>Frameworks & Data</h3><p>Java Swing · JDBC · MySQL · XAMPP</p></div><span class="toolkit-symbol">▤</span></div>
+          <div class="toolkit-row"><span class="toolkit-index">03</span><div><h3>Design & Visuals</h3><p>Figma · Canva · Snapseed</p></div><span class="toolkit-symbol">◩</span></div>
+          <div class="toolkit-row"><span class="toolkit-index">04</span><div><h3>Video & Motion</h3><p>CapCut · Video editing · Motion graphics</p></div><span class="toolkit-symbol">▶</span></div>
+          <div class="toolkit-row"><span class="toolkit-index">05</span><div><h3>Development Environment</h3><p>Visual Studio · IntelliJ IDEA · Apache NetBeans · Google Workspace</p></div><span class="toolkit-symbol">⌁</span></div>
+        </div>
       </div>
     </section>
 
-    <section class="section section-wrap" id="setup">
-      <div class="section-heading reveal"><p class="eyebrow">04 / THE WORKBENCH</p><h2>My everyday <span class="muted">setup.</span></h2><p class="section-intro">The hardware I use to develop, experiment, create, and play.</p></div>
-      <div class="hardware-grid">
-        <article class="hardware-card desktop-card reveal"><div class="hardware-label"><span>01 / DESKTOP</span><span class="hardware-status">PRIMARY RIG</span></div><div class="hardware-visual pc-visual"><div class="pc-case"><div class="pc-glass"><div class="fan fan-a"></div><div class="fan fan-b"></div><div class="gpu-bar"></div><div class="pc-glow"></div></div><div class="case-foot"></div></div><span class="visual-caption">CUSTOM BUILT / WINDOWS 11</span></div><h3>Desktop workstation</h3><p>My main machine for development, hardware experimentation, media work, and gaming.</p><div class="spec-list"><div><span>CPU</span><strong>AMD Ryzen 5 3600</strong></div><div><span>GPU</span><strong>Colorful GTX 1060 5GB</strong></div><div><span>MEMORY</span><strong>16GB DDR4 · 3200MHz</strong></div><div><span>BOARD</span><strong>Biostar B450MHP</strong></div><div><span>OS</span><strong>Windows 11</strong></div></div></article>
-        <article class="hardware-card reveal"><div class="hardware-label"><span>02 / LAPTOP</span><span class="hardware-status">PORTABLE</span></div><div class="hardware-visual laptop-visual"><div class="laptop-screen"><div class="screen-mark">PD<span>.</span><small>PORTABLE WORKSPACE</small></div></div><div class="laptop-base"></div></div><h3>TECNO Megabook K14S</h3><p>A portable daily driver for university, coding, productivity, and getting work done on the go.</p><div class="spec-list"><div><span>CPU</span><strong>AMD Ryzen 5 7430U</strong></div><div><span>MEMORY</span><strong>16GB DDR4 · 3200MHz</strong></div><div><span>STORAGE</span><strong>512GB NVMe SSD</strong></div></div></article>
-        <article class="hardware-card reveal"><div class="hardware-label"><span>03 / PERIPHERALS</span><span class="hardware-status">CUSTOMIZED</span></div><div class="peripheral-art"><div class="keyboard-art"><div class="key-row"></div><div class="key-row"></div><div class="key-row"></div><div class="space-key"></div></div><div class="mouse-art"></div></div><h3>Desk essentials</h3><p>A practical setup with a little personality, including a modified mechanical keyboard and everyday accessories.</p><div class="spec-list"><div><span>KEYBOARD</span><strong>Aula F3261 · modded</strong></div><div><span>SWITCHES</span><strong>KTT Kang White V3 / Hyacinth Purple</strong></div><div><span>MICE</span><strong>Inphic B2 / F1</strong></div><div><span>AUDIO</span><strong>realme Buds T300</strong></div></div></article>
+    <section class="creative-section">
+      <div class="section-wrap creative-grid">
+        <div class="creative-stamp reveal"><span>CREATIVE<br>DEPARTMENT</span><strong>TT</strong><span>TAKE TWO<br>PRODUCTIONS</span></div>
+        <div class="creative-copy reveal"><span class="section-number">04 / BEHIND THE LENS</span><h2>Not everything<br>starts with code.</h2><p>I'm also a video creator, director, and editor at <strong>Take Two Productions</strong>. From planning a concept to shaping the final cut, I enjoy the process of turning ideas into something people can see and feel.</p><div class="creative-tools"><span>VIDEO EDITING</span><span>DIRECTION</span><span>MOTION GRAPHICS</span><span>VISUAL STORYTELLING</span></div><a class="text-link" href="https://youtube.com/@OS9N9D" target="_blank" rel="noreferrer">Watch on YouTube ↗</a></div>
       </div>
     </section>
 
-    <section class="creative-section" id="creative"><div class="section-wrap creative-inner">
-      <div class="creative-copy reveal"><p class="eyebrow">05 / BEYOND THE CODE</p><h2>Creative work<br>with <span class="gradient-text">intention.</span></h2><p>Technology is only one side of what I do. Through Take Two Productions, I work across video editing, motion graphics, graphic design, and direction — bringing ideas together through visuals and storytelling.</p><a class="text-link" href="#contact">Have a creative project? <span>↗</span></a></div>
-      <div class="creative-board reveal"><div class="board-grid"></div><div class="board-frame frame-large"><span>TAKE TWO</span><strong>PRODUCTIONS</strong><small>VISUALS / STORIES / IDEAS</small></div><div class="board-frame frame-small"><span>POST</span><strong>PRODUCTION</strong></div><div class="board-stamp">T2<br><small>CREATE</small></div></div>
-    </div></section>
+    <section class="section-wrap setup-section" id="setup">
+      <div class="section-heading reveal"><span class="section-number">05 / THE SETUP</span><span class="section-rule"></span><span class="section-note">TOOLS OF THE TRADE</span></div>
+      <div class="setup-heading reveal"><h2>My little corner<br><span>of the digital world.</span></h2><p>Two machines, a few peripherals, and plenty of room for experiments.</p></div>
+      <div class="setup-grid">
+        <article class="setup-card reveal"><div class="setup-card-head"><span>WORKSTATION 01</span><span>DESKTOP / MAIN</span></div><div class="setup-visual desktop-visual"><div class="monitor"><div class="monitor-screen"><span>PD_</span><i></i><i></i><i></i></div><div class="monitor-neck"></div></div><div class="keyboard-visual"></div><div class="mouse-visual"></div></div><h3>Desktop Rig</h3><p class="setup-subtitle">The main workstation.</p><ul class="spec-list"><li><span>CPU</span><strong>AMD Ryzen 5 3600</strong></li><li><span>GPU</span><strong>Colorful GTX 1060 5GB</strong></li><li><span>BOARD</span><strong>Biostar B450MHP</strong></li><li><span>MEMORY</span><strong>16GB DDR4 · 3200MHz</strong></li><li><span>OS</span><strong>Windows 11</strong></li></ul><div class="setup-extra">AULA F3261 · INPHIC B2 · REALME BUDS T300<br>Windhawk (Down Aero) · Rainmeter</div></article>
+        <article class="setup-card reveal"><div class="setup-card-head"><span>WORKSTATION 02</span><span>LAPTOP / MOBILE</span></div><div class="setup-visual laptop-visual"><div class="laptop-screen"><div class="laptop-screen-inner"><span>HELLO<br>AGAIN.</span><small>MEGABOOK / 14</small></div></div><div class="laptop-base"></div></div><h3>TECNO Megabook K14S</h3><p class="setup-subtitle">For work beyond the desk.</p><ul class="spec-list"><li><span>CPU</span><strong>AMD Ryzen 5 7430U</strong></li><li><span>MEMORY</span><strong>16GB DDR4 · 3200MHz</strong></li><li><span>STORAGE</span><strong>512GB M.2 NVMe SSD</strong></li><li><span>MOUSE</span><strong>Inphic F1 Wireless</strong></li></ul><div class="setup-extra">A portable workspace for classes, projects,<br>and everything in between.</div></article>
+      </div>
+    </section>
 
-    <section class="section section-wrap contact-section" id="contact">
-      <div class="contact-panel reveal"><p class="eyebrow">06 / GET IN TOUCH</p><h2>Let's build<br><span class="gradient-text">something good.</span></h2><p>Open to conversations, collaborations, and opportunities to learn and create.</p><div class="contact-links"><a href="mailto:your.email@example.com" class="button button-primary" id="email-link">Email me <span>↗</span></a><a href="#" class="social-link" data-placeholder="github">GitHub ↗</a><a href="#" class="social-link" data-placeholder="linkedin">LinkedIn ↗</a></div><small class="edit-note">Replace the placeholder email and social links with your actual profiles.</small></div>
+    <section class="contact-section" id="contact">
+      <div class="section-wrap">
+        <div class="section-heading reveal"><span class="section-number">06 / GET IN TOUCH</span><span class="section-rule"></span><span class="section-note">THE NEXT THING STARTS SOMEWHERE</span></div>
+        <div class="contact-main reveal"><p class="eyebrow">HAVE AN IDEA? A PROJECT? JUST SAY HI.</p><h2>Let's make<br><span>something good.</span></h2><a class="contact-email" href="mailto:patrickdavid@example.com" id="email-link">Get in touch <span>↗</span></a><p class="email-note">Email address not published here yet — connect through my socials below.</p></div>
+        <div class="social-row reveal"><a href="https://github.com/Patrick-David1" target="_blank" rel="noreferrer"><span>GITHUB</span><strong>Patrick-David1 ↗</strong></a><a href="https://youtube.com/@OS9N9D" target="_blank" rel="noreferrer"><span>YOUTUBE</span><strong>@OS9N9D ↗</strong></a><a href="https://instagram.com/pat_dvd/" target="_blank" rel="noreferrer"><span>INSTAGRAM</span><strong>@pat_dvd ↗</strong></a></div>
+      </div>
     </section>
   </main>
-  <footer class="footer section-wrap"><a class="brand" href="#home"><span class="brand-mark">P<span>.</span></span><span class="brand-name">PATRICK DAVID</span></a><span>DESIGNED & BUILT WITH CURIOSITY.</span><span class="mono">© <span id="year"></span> · ALL RIGHTS RESERVED</span></footer>
+
+  <footer class="site-footer"><a class="brand" href="#top"><span class="brand-mark">P<span>.</span></span><span class="brand-name">PATRICK DAVID</span></a><span>DESIGNED & BUILT WITH CURIOSITY.</span><a href="#top">BACK TO TOP ↑</a><span id="year">© 2026</span></footer>
 </body>
 </html>
